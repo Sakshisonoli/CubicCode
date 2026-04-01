@@ -1,0 +1,31 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect all HTTP to HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Redirect to public folder if Laravel is outside web root
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Enable HSTS (Strict Transport Security)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # XSS Protection
+    Header set X-XSS-Protection "1; mode=block"
+
+    # Prevent content sniffing
+    Header set X-Content-Type-Options "nosniff"
+
+    # Referrer policy
+    Header set Referrer-Policy "no-referrer-when-downgrade"
+
+    # Frame protection
+    Header set X-Frame-Options "SAMEORIGIN"
+
+    # Permissions policy (adjust per your needs)
+    Header set Permissions-Policy "geolocation=(), microphone=()"
+</IfModule>

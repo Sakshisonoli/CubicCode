@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Web Application Development Portfolio - Cubiccode Digital Media LLP</title>
+   
+    <meta
+      name="description"
+      content="Cubiccode is a Full Stack Web Development Company with 500+ clients & 5x Awarded. We build Top Rated Websites, WebApps, Remote Teams & Recruite IT Talents."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="”robots”" content="”index," follow” />
+    <!-- ========== OG Property ========== -->
+    <meta
+      property="og:title"
+      content="Top 10 Best Website Developers in India - Silicon India - Most Outstanding Website Designing Company in Karnataka - Cubiccode Digital Media LLP"
+    />
+
+    <meta
+      property="og:description"
+      content="Crafted With Love. Built With Passion"
+    />
+
+    <meta property="og:image" src="/assets/img/banner/42.jpg" />
+
+    <meta
+      property="og:url"
+      content="https://cubiccode.in/top-10-best-website-developers-india.html"
+    />
+
+    <meta property="og:site_name" content="Cubiccode Digital Media LLP." />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/cubiccode/favicon.png"
+    />
+    <!-- CSS
+         ============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="css/flaticon_digiwize.css" />
+    <!-- Base Icons -->
+    <link rel="stylesheet" href="css/pbminfotech-base-icons.css" />
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <!-- Magnific -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <!-- Shortcode CSS -->
+    <link rel="stylesheet" href="css/shortcode.css" />
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="revolution/rs6.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+      <style>
+      #website-portfolio .cc-portfolio-filter-wrap {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 0 2.25rem;
+      }
+      #website-portfolio .cc-portfolio-filter {
+        position: relative;
+        min-width: 320px;
+        font-family: inherit;
+      }
+      #website-portfolio .cc-portfolio-filter__toggle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.85rem 1.15rem;
+        border: 2px solid #1a56db;
+        border-radius: 8px;
+        background: #1a56db;
+        color: #ffffff;
+        font: inherit;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: background 0.2s ease, border-color 0.2s ease;
+      }
+      #website-portfolio .cc-portfolio-filter__toggle:hover,
+      #website-portfolio .cc-portfolio-filter.is-open .cc-portfolio-filter__toggle {
+        background: #1648c0;
+        border-color: #1648c0;
+      }
+      #website-portfolio .cc-portfolio-filter__label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.1rem;
+        text-align: left;
+      }
+      #website-portfolio .cc-portfolio-filter__eyebrow {
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.75);
+      }
+      #website-portfolio .cc-portfolio-filter__value {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        color: #ffffff;
+      }
+      #website-portfolio .cc-portfolio-filter__arrow {
+        flex-shrink: 0;
+        font-size: 1rem;
+        color: #ffffff;
+        transition: transform 0.25s ease;
+        transform-origin: center;
+      }
+      #website-portfolio .cc-portfolio-filter.is-open .cc-portfolio-filter__arrow {
+        transform: rotate(180deg);
+      }
+      #website-portfolio .cc-portfolio-filter__menu {
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        right: 0;
+        z-index: 20;
+        margin: 0;
+        padding: 4px;
+        list-style: none;
+        border-radius: 8px;
+        border: 1px solid #d1d5db;
+        background: #ffffff;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(6px);
+        pointer-events: none;
+        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+      }
+      #website-portfolio .cc-portfolio-filter.is-open .cc-portfolio-filter__menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+      #website-portfolio .cc-portfolio-filter__option {
+        width: 100%;
+        border: 0;
+        border-radius: 6px;
+        background: transparent;
+        color: #1f2937;
+        font: inherit;
+        font-weight: 500;
+        font-size: 0.92rem;
+        text-align: left;
+        padding: 0.75rem 1rem;
+        cursor: pointer;
+        transition: background 0.15s ease, color 0.15s ease;
+      }
+      #website-portfolio .cc-portfolio-filter__option:hover,
+      #website-portfolio .cc-portfolio-filter__option:focus-visible,
+      #website-portfolio .cc-portfolio-filter__option.is-active {
+        background: #eff6ff;
+        color: #1a56db;
+        outline: none;
+      }
+      .cc-portfolio-item {
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+      .cc-portfolio-item.is-hiding {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      .cc-portfolio-section {
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+      .cc-portfolio-section.is-hiding {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      #website-portfolio .pbmit-portfolio-style-12 .pbminfotech-box-content {
+        display: flex;
+        align-items: stretch;
+      }
+      #website-portfolio .pbmit-portfolio-style-12 .pbminfotech-titlebox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.6rem;
+        min-height: 96px;
+        width: 100%;
+      }
+      #website-portfolio .pbmit-portfolio-style-12 .pbmit-portfolio-title {
+        margin: 0;
+        line-height: 1.28;
+        min-height: 2.56em;
+      }
+      #website-portfolio .pbmit-portfolio-style-12 .pbmit-portfolio-title.cc-title-balanced {
+        display: flex;
+        align-items: flex-end;
+      }
+      #website-portfolio .pbmit-portfolio-style-12 .pbmit-portfolio-title a {
+        display: block;
+      }
+      #website-portfolio .pbmit-portfolio-style-12 .pbmit-port-cat {
+        margin-top: 0;
+      }
+      #website-portfolio .pbmit-element-portfolio-style-12 .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+      }
+      #website-portfolio .pbmit-element-portfolio-style-12 .row > article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+      #website-portfolio .pbmit-element-portfolio-style-12 .row > article .pbminfotech-post-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      #website-portfolio .pbmit-element-portfolio-style-12 .row > article .pbmit-image-wrapper {
+        flex-shrink: 0;
+      }
+      #website-portfolio .pbmit-element-portfolio-style-12 .row > article .pbmit-image-wrapper img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        display: block;
+      }
+      #website-portfolio .pbmit-element-portfolio-style-12 .row > article .pbminfotech-box-content {
+        flex: 1;
+      }
+      @media (max-width: 767.98px) {
+        #website-portfolio .cc-portfolio-filter-wrap {
+          justify-content: stretch;
+        }
+        #website-portfolio .cc-portfolio-filter {
+          min-width: 100%;
+        }
+      }
+      #website-portfolio .pbmit-element-portfolio-style-12 .pbmit-portfolio-style-12:nth-child(2n),
+      #webapp-portfolio .pbmit-element-portfolio-style-12 .pbmit-portfolio-style-12:nth-child(2n) {
+        margin-top: 0 !important;
+      }
+      #website-portfolio .pbmit-heading-subheading .pbmit-title,
+      #webapp-portfolio .pbmit-heading-subheading .pbmit-title {
+        font-size: 48px !important;
+        line-height: 1.2 !important;
+      }
+      #website-portfolio .pbmit-element-portfolio-style-12,
+      #webapp-portfolio .pbmit-element-portfolio-style-12 {
+        margin-top: 3rem;
+      }
+      #website-portfolio .pbmit-heading-subheading,
+      #webapp-portfolio .pbmit-heading-subheading {
+        margin-bottom: 3rem;
+      }
+      .web-agency-about1.section-lg {
+        padding-bottom: 30px;
+      }
+      #webapp-portfolio .pbmit-portfolio-style-12 .pbminfotech-box-content {
+        display: flex;
+        align-items: stretch;
+      }
+      #webapp-portfolio .pbmit-portfolio-style-12 .pbminfotech-titlebox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        min-height: unset;
+        width: 100%;
+      }
+      #webapp-portfolio .pbmit-portfolio-style-12 .pbmit-portfolio-title {
+        margin: 0;
+        line-height: 1.28;
+        min-height: unset;
+        flex: 1;
+      }
+      #webapp-portfolio .pbmit-portfolio-style-12 .pbmit-port-cat {
+        margin-top: 0;
+        flex-shrink: 0;
+      }
+      #webapp-portfolio .pbmit-portfolio-style-12 .pbmit-portfolio-title a {
+        display: block;
+      }
+      #webapp-portfolio .pbmit-element-portfolio-style-12 .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      #webapp-portfolio .pbmit-element-portfolio-style-12 .row > article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+      /* Stats overlay always visible */
+      #webapp-portfolio .pbmit-image-wrapper {
+        position: relative !important;
+        overflow: visible;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+      }
+      #webapp-portfolio .pbmit-featured-wrapper {
+        overflow: hidden;
+        border-radius: 6px 6px 0 0;
+        position: relative !important;
+        top: 0 !important;
+        height: auto !important;
+        transform: none !important;
+      }
+      .cc-stats-overlay {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        background: rgba(0, 0, 0, 0.82);
+        color: #fff;
+        padding: 14px 18px;
+        border-radius: 0 0 6px 6px;
+        opacity: 1 !important;
+        z-index: 7;
+      }
+      .cc-stats-overlay h6 {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #a3e635;
+        margin: 0 0 8px;
+      }
+      .cc-stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 12px;
+      }
+      .cc-stat-item {
+        font-size: 11px;
+        line-height: 1.4;
+        color: #f0f0f0;
+      }
+      .cc-stat-item span {
+        font-weight: 700;
+        color: #fff;
+      }
+      #webapp-portfolio .pbmit-element-portfolio-style-12 .row > article .pbminfotech-post-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      #webapp-portfolio .pbmit-element-portfolio-style-12 .row > article .pbmit-image-wrapper {
+        flex-shrink: 0;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      #webapp-portfolio .pbmit-element-portfolio-style-12 .row > article .pbmit-image-wrapper img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 6px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12), 0 -4px 20px rgba(0, 0, 0, 0.08);
+        transition: box-shadow 0.4s ease;
+      }
+      #webapp-portfolio .pbmit-element-portfolio-style-12 .row > article:hover .pbmit-image-wrapper img {
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22), 0 -8px 30px rgba(0, 0, 0, 0.14), 0 0 30px rgba(26, 86, 219, 0.12);
+      }
+      #webapp-portfolio .pbmit-element-portfolio-style-12 .row > article .pbmit-image-wrapper img[alt="End-to-End Student Platform"] {
+        height: 260px;
+        object-fit: cover;
+        object-position: top;
+      }
+      #webapp-portfolio .pbmit-element-portfolio-style-12 .row > article .pbmit-image-wrapper img[alt="Industrial Inventory Platform"] {
+        height: auto;
+        object-fit: unset;
+      }
+      #webapp-portfolio .pbmit-element-portfolio-style-12 .row > article .pbminfotech-box-content {
+        flex: 1;
+        padding: 8px 0 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+      <!-- Header Main Area -->
+      <header class="site-header header-style-1">
+        <div class="pbmit-header-overlay">
+          <div class="site-header-menu">
+            <div class="container-fluid g-0">
+              <div class="row g-0">
+                <div class="col-md-12">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div
+                      class="d-flex align-items-center justify-content-between pbmit-header-content"
+                    >
+                      <div class="site-branding pbmit-logo-area">
+                        <h1 class="site-title">
+                          <a href="index.html">
+                            <img
+                              class="logo-img"
+                              src="images/cubiccode/logo.png"
+                              alt="Digital Agency"
+                            />
+                            <img
+                              class="sticky-logo"
+                              src="images/cubiccode/logo.png"
+                              alt="Digital Agency"
+                            />
+                          </a>
+                        </h1>
+                      </div>
+                    </div>
+                    <div class="site-navigation">
+                      <nav class="main-menu navbar-expand-xl navbar-light">
+                        <div class="pbmit-mobile-menu-bg"></div>
+                        <div
+                          class="collapse navbar-collapse clearfix show"
+                          id="pbmit-menu"
+                        >
+                          <div class="pbmit-menu-wrap">
+                            <span class="closepanel">
+                              <svg
+                                class="qodef-svg--close qodef-m"
+                                xmlns="https://www.w3.org/2000/svg"
+                                width="20.163"
+                                height="20.163"
+                                viewBox="0 0 26.163 26.163"
+                              >
+                                <rect
+                                  width="36"
+                                  height="1"
+                                  transform="translate(0.707) rotate(45)"
+                                ></rect>
+                                <rect
+                                  width="36"
+                                  height="1"
+                                  transform="translate(0 25.456) rotate(-45)"
+                                ></rect>
+                              </svg>
+                            </span>
+                            <ul class="navigation clearfix">
+                              <li>
+                                <a href="index.html">Home</a>
+                              </li>
+                              <li>
+                                <a
+                                  href="top-web-designing-and-development-company-in-belgaum-karnataka-india.html"
+                                  >About Us</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="best-website-designing-and-development-company-in-belgaum-karnataka-india.html"
+                                  >Services</a
+                                >
+                              </li>
+                              <li class="active dropdown cc-portfolio-dropdown">
+                                <a
+                                  href="best-web-application-development-company-belgaum-karnataka-india.html"
+                                  >Work Portfolio</a
+                                >
+                                <ul class="cc-mega-dropdown">
+                                  <li class="cc-mega-item">
+                                    <a href="best-web-application-development-company-belgaum-karnataka-india.html" class="cc-mega-link">
+                                      <span class="cc-mega-text">
+                                        <strong>Website Designing &amp; Development</strong>
+                                      </span>
+                                    </a>
+                                  </li>
+                                  <li class="cc-mega-item">
+                                    <a href="web-application-development-portfolio.html" class="cc-mega-link">
+                                      <span class="cc-mega-text">
+                                        <strong>Web Application Development</strong>
+                                      </span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="best-ecommerce-website-designing-and-development-company-belgaum-karnataka-india.html"
+                                  >Clientele
+                                </a>
+                              </li>
+                               <li>
+                                <a
+                                  href="https://cubiccode.org/"
+                                  target="_blank"
+                                  >Education</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="contact-details-cubiccode-digital-media-llp.html"
+                                  >Contact</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="pbmit-right-box">
+                      <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button class="navbar-toggler" type="button">
+                          <i class="pbmit-base-icon-menu-1"></i>
+                        </button>
+                      </div>
+                      <button
+                        id="pbmit-menu-toggle"
+                        class="pbmit-nav-menu-toggle"
+                      >
+                        <svg
+                          class="pbmit-svg-icon"
+                          xmlns="https://www.w3.org/2000/svg"
+                          width="36"
+                          height="21"
+                          viewBox="0 0 36 21"
+                        >
+                          <path
+                            d="M0,0H36V1H0Z"
+                            transform="translate(0 20)"
+                          ></path>
+                          <path
+                            d="M0,0H36V1H0Z"
+                            transform="translate(0 10)"
+                          ></path>
+                          <path d="M0,0H36V1H0Z"></path>
+                        </svg>
+                      </button>
+                      <div class="floting-bar-wrap">
+                        <div class="floting-bar-widget-area">
+                          <aside
+                            id="media_image-2"
+                            class="widget widget_media_image"
+                          >
+                            <img
+                              src="images/cubiccode/logo.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </aside>
+                          <aside
+                            id="custom_html-2"
+                            class="widget_text widget widget_custom_html"
+                          >
+                            <div class="textwidget custom-html-widget">
+                              <div class="pbmit-contact-box">
+                                <div class="pbmit-contact-list pbmit-location">
+                                  <h4>WE ARE HERE</h4>
+                                  <span
+                                    >Plot.No. 60, Saraf Colony, Opposite to
+                                    Saraf Residency, Near Dominos Pizza, RPD
+                                    Cross, Khanapur Road, Tilakwadi, Belagavi,
+                                    Karnataka, India- 590006</span
+                                  >
+                                </div>
+                                <div class="pbmit-contact-list pbmit-phone">
+                                  <h4>CALL &amp; MAIL</h4>
+                                  <span>+91 9108101795</span>
+                                  <span>+91 8050203399</span>
+                                  <span
+                                    ><a href="maito:biz@cubiccode.in"
+                                      >biz@cubiccode.in</a
+                                    ></span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </aside>
+                        </div>
+                        <div class="floting-bar-social-wrap">
+                          <div class="floting-bar-social-title">
+                            <h4>Social Links</h4>
+                            <ul class="pbmit-social-links">
+                              <li class="pbmit-social-li pbmit-social-twitter">
+                                <a
+                                  href="https://www.linkedin.com/company/cubiccode/mycompany/"
+                                  target="_blank"
+                                >
+                                  <span
+                                    ><i class="pbmit-base-icon-linkedin-in"></i
+                                  ></span>
+                                </a>
+                              </li>
+
+                              <li
+                                class="pbmit-social-li pbmit-social-instagram"
+                              >
+                                <a
+                                  href="https://www.instagram.com/cubiccode.in/"
+                                  target="_blank"
+                                >
+                                  <span
+                                    ><i class="pbmit-base-icon-instagram"></i
+                                  ></span>
+                                </a>
+                              </li>
+
+                              <li class="pbmit-social-li pbmit-social-youtube">
+                                <a
+                                  href="https://www.youtube.com/channel/UCinfpxrfs_N4npK7LtSup3g"
+                                  target="_blank"
+                                >
+                                  <span
+                                    ><i class="pbmit-base-icon-youtube-play"></i
+                                  ></span>
+                                </a>
+                              </li>
+
+                              <li class="pbmit-social-li pbmit-social-youtube">
+                                <a
+                                  href="https://wa.link/qzlm1j"
+                                  target="_blank"
+                                >
+                                  <span
+                                    ><i class="pbmit-base-icon-chat"></i
+                                  ></span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="closepanel">
+                          <svg
+                            class="pbmit-floting-close-icon"
+                            xmlns="https://www.w3.org/2000/svg"
+                            width="26.163"
+                            height="26.163"
+                            viewBox="0 0 26.163 26.163"
+                          >
+                            <rect
+                              width="36"
+                              height="1"
+                              transform="translate(0.707) rotate(45)"
+                            ></rect>
+                            <rect
+                              width="36"
+                              height="1"
+                              transform="translate(0 25.456) rotate(-45)"
+                            ></rect>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header Main Area End Here -->
+
+      <!-- Title Bar -->
+      <div class="pbmit-title-bar-wrapper hp-bg-img-3">
+        <div class="container">
+          <div class="pbmit-title-bar-content">
+            <div class="pbmit-title-bar-content-inner">
+              <div class="pbmit-tbar">
+                <div class="pbmit-tbar-inner container">
+                  <h1 class="pbmit-tbar-title">Work Portfolio</h1>
+                </div>
+              </div>
+              <div class="pbmit-breadcrumb">
+                <div class="pbmit-breadcrumb-inner">
+                  <span
+                    ><a href="index.html" class="home"
+                      ><span>Cubiccode</span></a
+                    ></span
+                  >
+                  <span class="sep"
+                    ><i class="pbmit-base-icon-full-stop"></i
+                  ></span>
+                  <span
+                    ><span class="post-root post post-post current-item"
+                      >Work Portfolio</span
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Title Bar End-->
+
+      <!-- Page Content -->
+      <div class="page-content">
+        <!-- About Start -->
+        <section class="section-lg web-agency-about1">
+          <div class="container">
+            <div class="row g-0">
+              <div class="col-lg-5 pbmit-col-left">
+                <div class="pbmit-heading-subheading animation-style2">
+                  <h2 class="pbmit-title">
+                    Crafted with
+                    <span class="pbmit-globalcolor"> love.</span> built with
+                    passion
+                  </h2>
+                  <div class="pbmit-heading-desc">
+                    Our web portfolio is a reflection of our expertise and
+                    dedication. It highlights our ability to deliver custom
+                    solutions that meet the unique needs of each client, driving
+                    their success in the digital world.
+                  </div>
+                </div>
+                <div class="pbmit-svg-btn">
+                  <a
+                    href="https://drive.google.com/file/d/14cS_00jocowCZ_A5V9tf028YTQyJij0Z/view"
+                    target="_blank"
+                    class="pbmit-btn pbmit-black-global-txt"
+                  >
+                    <span class="pbmit-header-button2-text"
+                      >Download our Website Work Portfolio
+                    </span>
+                  </a>
+                </div>
+                <div class="pbmit-svg-btn">
+                  <a
+                    href="https://drive.google.com/file/d/1PDxF6CBzBtO5KDCDCNdZCTBVpXYh9DW5/view"
+                    target="_blank"
+                    class="pbmit-btn pbmit-black-global-txt"
+                  >
+                    <span class="pbmit-header-button2-text"
+                      >Download our Performance Marketing Work Portfolio</span
+                    >
+                  </a>
+                </div>
+                <div class="pbmit-svg-btn">
+                  <a href="contact-details-cubiccode-digital-media-llp.html" class="pbmit-btn pbmit-black-global-txt">
+                    <span class="pbmit-header-button2-text">Get In Touch</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-7 pbmit-col-right">
+                <div class="row g-0">
+                  <!-- <div class="col-md-6 text-lg-start text-center pbmit-animation-style3">
+                  <img src="images/web-agency/imgdemo13.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="col-md-6 text-lg-end text-center image-wrap pbmit-animation-style4">
+                  <img src="images/web-agency/img2demo13.jpg" alt="" class="img-fluid" />
+                </div> -->
+                  <img
+                    src="images/cubiccode/news-paper-cutouts.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About End -->
+
+        
+
+        
+        <section id="webapp-portfolio" class="section-lgx creative-studio-portfolio hp-mobile-spacing cc-portfolio-section" data-category-group="web-application">
+          <div class="container pt-4">
+            <div class="pbmit-heading-subheading animation-style2 mb-5" style="margin-bottom:3rem!important;">
+              <h4 class="pbmit-subtitle">Web Applications</h4>
+              <h2 class="pbmit-title">Web Application <span class="pbmit-globalcolor">Development Portfolio</span></h2>
+              <p class="mt-3" style="margin-bottom:0;margin-top:-0.5rem!important;">Complex React, Laravel &amp; custom web applications built for businesses across industries.</p>
+            </div>
+            <div class="pbmit-element-portfolio-style-12">
+              <div class="row">
+                <!-- Portfolio Management Platform for Traders and Investment Firms With Monthly Payout Management -->
+                <article class="col-md-6 pbmit-portfolio-style-12 cc-portfolio-item" data-category="web-application">
+                  <div class="pbminfotech-post-content">
+                    <div class="pbmit-image-wrapper">
+                      <div class="pbmit-featured-img-wrapper">
+                        <div class="pbmit-featured-wrapper">
+                          <img src="images/cubiccode/website-portfolio/portfolio-management-platform.png" class="img-fluid" alt="Portfolio Management Platform" />
+                        </div>
+                      </div>
+                      <a class="pbmit-portfolio-btn" href="https://www.linkedin.com/pulse/how-we-built-250-cr-portfolio-management-platform-managing-kakkeri-iknzc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"><i class="pbmit-base-icon-bottom-right"></i></a>
+                      <div class="cc-stats-overlay">
+                        <h6>Users &amp; Transactions</h6>
+                        <div class="cc-stats-grid">
+                          <div class="cc-stat-item">💰 Assets managed: ₹<span class="cc-count" data-target="250" data-suffix="+ Crore">0</span></div>
+                          <div class="cc-stat-item">👥 Clients served: <span class="cc-count" data-target="3500" data-suffix="+">0</span></div>
+                          <div class="cc-stat-item">🔄 Monthly payouts: ₹<span class="cc-count" data-target="5" data-suffix="+ Crore">0</span></div>
+                          <div class="cc-stat-item">🏢 Used as core business platform</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pbminfotech-box-content">
+                      <div class="pbminfotech-titlebox">
+                        <h3 class="pbmit-portfolio-title"><a class="text-black" href="https://www.linkedin.com/pulse/how-we-built-250-cr-portfolio-management-platform-managing-kakkeri-iknzc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank">Trader Portfolio System</a></h3>
+                        <div class="pbmit-port-cat"><a href="https://www.linkedin.com/pulse/how-we-built-250-cr-portfolio-management-platform-managing-kakkeri-iknzc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank" rel="tag">WebApp</a></div>
+                      </div>
+                    </div>
+                    <a class="pbmit-link" href="https://www.linkedin.com/pulse/how-we-built-250-cr-portfolio-management-platform-managing-kakkeri-iknzc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"></a>
+                  </div>
+                </article>
+
+                <article class="col-md-6 pbmit-portfolio-style-12 cc-portfolio-item" data-category="web-application">
+                  <div class="pbminfotech-post-content">
+                    <div class="pbmit-image-wrapper">
+                      <div class="pbmit-featured-img-wrapper">
+                        <div class="pbmit-featured-wrapper">
+                          <img src="images/cubiccode/website-portfolio/ticket-selling-platform.png" class="img-fluid" alt="Event Ticket Hub" />
+                        </div>
+                      </div>
+                      <a class="pbmit-portfolio-btn" href="https://www.linkedin.com/pulse/how-we-built-scalable-ticket-selling-reselling-platform-kakkeri-btqjc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"><i class="pbmit-base-icon-bottom-right"></i></a>
+                      <div class="cc-stats-overlay">
+                        <h6>Usage &amp; Impact</h6>
+                        <div class="cc-stats-grid">
+                          <div class="cc-stat-item">🎫 <span class="cc-count" data-target="10000" data-suffix="+">0</span> ticket listings/month</div>
+                          <div class="cc-stat-item">💸 ₹<span class="cc-count" data-target="1.5" data-suffix=" Cr+" data-decimal="1">0</span> monthly transactions</div>
+                          <div class="cc-stat-item">🔐 <span class="cc-count" data-target="20000" data-suffix="+">0</span> secure payments</div>
+                          <div class="cc-stat-item">⚡ <span class="cc-count" data-target="99.99" data-suffix="%" data-decimal="2">0</span> platform uptime</div>
+                          <div class="cc-stat-item">👥 <span class="cc-count" data-target="1000" data-suffix="+">0</span> concurrent users</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pbminfotech-box-content">
+                      <div class="pbminfotech-titlebox">
+                        <h3 class="pbmit-portfolio-title"><a class="text-black" href="https://www.linkedin.com/pulse/how-we-built-scalable-ticket-selling-reselling-platform-kakkeri-btqjc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank">Event Ticket Hub</a></h3>
+                        <div class="pbmit-port-cat"><a href="https://www.linkedin.com/pulse/how-we-built-scalable-ticket-selling-reselling-platform-kakkeri-btqjc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank" rel="tag">WebApp</a></div>
+                      </div>
+                    </div>
+                    <a class="pbmit-link" href="https://www.linkedin.com/pulse/how-we-built-scalable-ticket-selling-reselling-platform-kakkeri-btqjc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"></a>
+                  </div>
+                </article>
+
+                <article class="col-md-6 pbmit-portfolio-style-12 cc-portfolio-item" data-category="web-application">
+                  <div class="pbminfotech-post-content">
+                    <div class="pbmit-image-wrapper">
+                      <div class="pbmit-featured-img-wrapper">
+                        <div class="pbmit-featured-wrapper">
+                          <img src="images/cubiccode/website-portfolio/smart-job-portal.png" class="img-fluid" alt="A Smart Job Portal" />
+                        </div>
+                      </div>
+                      <a class="pbmit-portfolio-btn" href="https://www.linkedin.com/pulse/how-we-built-smart-job-portal-source-nursing-german-sarvesh-kakkeri-d80hc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"><i class="pbmit-base-icon-bottom-right"></i></a>
+                      <div class="cc-stats-overlay">
+                        <h6>Usage &amp; Impact</h6>
+                        <div class="cc-stats-grid">
+                          <div class="cc-stat-item">👥 <span class="cc-count" data-target="10000" data-suffix="+">0</span> verified nursing applications</div>
+                          <div class="cc-stat-item">🏥 <span class="cc-count" data-target="100" data-suffix="+">0</span> German clinics supported</div>
+                          <div class="cc-stat-item">📄 <span class="cc-count" data-target="1500" data-suffix="+">0</span> applications/month</div>
+                          <div class="cc-stat-item">⏱ <span class="cc-count" data-target="60" data-suffix="%">0</span> faster employer review</div>
+                          <div class="cc-stat-item">🌍 Cross-border hiring at scale</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pbminfotech-box-content">
+                      <div class="pbminfotech-titlebox">
+                        <h3 class="pbmit-portfolio-title"><a class="text-black" href="https://www.linkedin.com/pulse/how-we-built-smart-job-portal-source-nursing-german-sarvesh-kakkeri-d80hc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank">Global Hiring Hub</a></h3>
+                        <div class="pbmit-port-cat"><a href="https://www.linkedin.com/pulse/how-we-built-smart-job-portal-source-nursing-german-sarvesh-kakkeri-d80hc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank" rel="tag">WebApp</a></div>
+                      </div>
+                    </div>
+                    <a class="pbmit-link" href="https://www.linkedin.com/pulse/how-we-built-smart-job-portal-source-nursing-german-sarvesh-kakkeri-d80hc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"></a>
+                  </div>
+                </article>
+
+                <article class="col-md-6 pbmit-portfolio-style-12 cc-portfolio-item" data-category="web-application">
+                  <div class="pbminfotech-post-content">
+                    <div class="pbmit-image-wrapper">
+                      <div class="pbmit-featured-img-wrapper">
+                        <div class="pbmit-featured-wrapper">
+                          <img src="images/cubiccode/website-portfolio/student-branch-management.png" class="img-fluid" alt="End-to-End Student Platform" />
+                        </div>
+                      </div>
+                      <a class="pbmit-portfolio-btn" href="https://www.linkedin.com/pulse/how-we-built-management-platform-expanding-education-brand-kakkeri-ma90c?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"><i class="pbmit-base-icon-bottom-right"></i></a>
+                      <div class="cc-stats-overlay">
+                        <h6>Usage &amp; Impact</h6>
+                        <div class="cc-stats-grid">
+                          <div class="cc-stat-item">🏫 <span class="cc-count" data-target="30" data-suffix="+">0</span> active centers managed</div>
+                          <div class="cc-stat-item">👨‍🎓 <span class="cc-count" data-target="1000" data-suffix="+">0</span> students onboarded/month</div>
+                          <div class="cc-stat-item">💰 Automated fee tracking &amp; reminders</div>
+                          <div class="cc-stat-item">📊 Tens of thousands of logs monthly</div>
+                          <div class="cc-stat-item">📜 QR-verified certificates</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pbminfotech-box-content">
+                      <div class="pbminfotech-titlebox">
+                        <h3 class="pbmit-portfolio-title"><a class="text-black" href="https://www.linkedin.com/pulse/how-we-built-management-platform-expanding-education-brand-kakkeri-ma90c?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank">Student &amp; Branch Management System</a></h3>
+                        <div class="pbmit-port-cat"><a href="https://www.linkedin.com/pulse/how-we-built-management-platform-expanding-education-brand-kakkeri-ma90c?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank" rel="tag">WebApp</a></div>
+                      </div>
+                    </div>
+                    <a class="pbmit-link" href="https://www.linkedin.com/pulse/how-we-built-management-platform-expanding-education-brand-kakkeri-ma90c?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"></a>
+                  </div>
+                </article>
+
+                <article class="col-md-6 pbmit-portfolio-style-12 cc-portfolio-item" data-category="web-application">
+                  <div class="pbminfotech-post-content">
+                    <div class="pbmit-image-wrapper">
+                      <div class="pbmit-featured-img-wrapper">
+                        <div class="pbmit-featured-wrapper">
+                          <img src="images/cubiccode/website-portfolio/industrial-inventory-platform.png" class="img-fluid" alt="Industrial Inventory Platform" />
+                        </div>
+                      </div>
+                      <a class="pbmit-portfolio-btn" href="https://www.linkedin.com/pulse/how-we-built-custom-industrial-service-inventory-platform-kakkeri-bd0xc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"><i class="pbmit-base-icon-bottom-right"></i></a>
+                      <div class="cc-stats-overlay">
+                        <h6>Usage &amp; Impact</h6>
+                        <div class="cc-stats-grid">
+                          <div class="cc-stat-item">🛠️ <span class="cc-count" data-target="5000" data-suffix="+">0</span> service visits logged/year</div>
+                          <div class="cc-stat-item">📦 Thousands of inventory movements tracked</div>
+                          <div class="cc-stat-item">💼 Complete travel &amp; allowance visibility</div>
+                          <div class="cc-stat-item">📊 Real-time management dashboards</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pbminfotech-box-content">
+                      <div class="pbminfotech-titlebox">
+                        <h3 class="pbmit-portfolio-title"><a class="text-black" href="https://www.linkedin.com/pulse/how-we-built-custom-industrial-service-inventory-platform-kakkeri-bd0xc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank">Industrial Inventory &amp; Field Service Platform</a></h3>
+                        <div class="pbmit-port-cat"><a href="https://www.linkedin.com/pulse/how-we-built-custom-industrial-service-inventory-platform-kakkeri-bd0xc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank" rel="tag">WebApp</a></div>
+                      </div>
+                    </div>
+                    <a class="pbmit-link" href="https://www.linkedin.com/pulse/how-we-built-custom-industrial-service-inventory-platform-kakkeri-bd0xc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"></a>
+                  </div>
+                </article>
+
+                <article class="col-md-6 pbmit-portfolio-style-12 cc-portfolio-item" data-category="web-application">
+                  <div class="pbminfotech-post-content">
+                    <div class="pbmit-image-wrapper">
+                      <div class="pbmit-featured-img-wrapper">
+                        <div class="pbmit-featured-wrapper">
+                          <img src="images/cubiccode/website-portfolio/crypto-mlm-platform.png" class="img-fluid" alt="Crypto Payments Platform" />
+                        </div>
+                      </div>
+                      <a class="pbmit-portfolio-btn" href="https://www.linkedin.com/pulse/how-we-built-scalable-mlm-platform-crypto-payments-roi-kakkeri-6ptwc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"><i class="pbmit-base-icon-bottom-right"></i></a>
+                      <div class="cc-stats-overlay">
+                        <h6>Usage &amp; Impact</h6>
+                        <div class="cc-stats-grid">
+                          <div class="cc-stat-item">👥 <span class="cc-count" data-target="3000" data-suffix="+">0</span> users onboarded</div>
+                          <div class="cc-stat-item">💰 ₹<span class="cc-count" data-target="7.5" data-suffix=" Cr+" data-decimal="1">0</span> crypto investments</div>
+                          <div class="cc-stat-item">🧾 ₹<span class="cc-count" data-target="1.7" data-suffix=" Cr+" data-decimal="1">0</span> ROI &amp; commissions paid</div>
+                          <div class="cc-stat-item">🔗 <span class="cc-count" data-target="9000" data-suffix="+">0</span> referrals rewarded</div>
+                          <div class="cc-stat-item">🔄 <span class="cc-count" data-target="15000" data-suffix="+">0</span> commission transactions</div>
+                          <div class="cc-stat-item">🕐 &lt;2% transaction failure rate</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pbminfotech-box-content">
+                      <div class="pbminfotech-titlebox">
+                        <h3 class="pbmit-portfolio-title"><a class="text-black" href="https://www.linkedin.com/pulse/how-we-built-scalable-mlm-platform-crypto-payments-roi-kakkeri-6ptwc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank">Crypto MLM Platform</a></h3>
+                        <div class="pbmit-port-cat"><a href="https://www.linkedin.com/pulse/how-we-built-scalable-mlm-platform-crypto-payments-roi-kakkeri-6ptwc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank" rel="tag">WebApp</a></div>
+                      </div>
+                    </div>
+                    <a class="pbmit-link" href="https://www.linkedin.com/pulse/how-we-built-scalable-mlm-platform-crypto-payments-roi-kakkeri-6ptwc?utm_source=share&utm_medium=member_android&utm_campaign=share_via" target="_blank"></a>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Web App Portfolio End -->
+        <div class="fab-container">
+          <div class="fabm fab-icon-holder">
+            <i class="bi bi-headset"></i>
+          </div>
+
+          <ul class="fab-options">
+            <li>
+              <div class="fab1 fab-icon-holder">
+                <a href="https://g.page/cubiccode?share" target="_blank"
+                  ><i class="bi bi-geo-alt"></i
+                ></a>
+              </div>
+              <span class="fab-label">Location</span>
+            </li>
+
+            <li>
+              <div class="fab2 fab-icon-holder">
+                <a
+                  href="https://api.whatsapp.com/send?phone=+919108101795&text=Hello%21%20."
+                  target="_blank"
+                >
+                  <i class="bi bi-whatsapp"></i
+                ></a>
+              </div>
+              <span class="fab-label">WhatsApp</span>
+            </li>
+
+            <li>
+              <div class="fab3 fab-icon-holder">
+                <a href="tel:+919108101795"><i class="bi bi-telephone"></i></a>
+              </div>
+              <span class="fab-label">Call Us</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- End Floating Buttons -->
+
+        <!-- Tween Effect Start -->
+        <section
+          class="modern-digital-agency-tween-effect overflow-hidden pbmit-bg-color-light"
+        >
+          <div class="container modern-digital-agency-tween-effect-inner">
+            <div class="pbmit-tween-effect-style-1">
+              <div
+                class="tween-text tween-image pbmit-tween-effect"
+                data-x-start="-10"
+                data-x-end="30"
+                data-y-start="0"
+                data-y-end="0"
+                data-scale-x-start="1"
+                data-scale-x-end=" 1"
+                data-skew-x-start=" 0deg"
+                data-skew-x-end="0deg"
+                data-skew-y-start=" 0deg"
+                data-skew-y-end=" 0deg"
+                data-rotate-x-start="0"
+                data-rotate-x-end="0"
+              >
+                <h3 class="pbmit-element-title">Have a Project</h3>
+              </div>
+            </div>
+            <div class="pbmit-tween-effect-style-2">
+              <div
+                class="tween-text tween-image pbmit-tween-effect"
+                data-x-start="60"
+                data-x-end="5"
+                data-y-start="0"
+                data-y-end="0"
+                data-scale-x-start="1"
+                data-scale-x-end=" 1"
+                data-skew-x-start=" 0deg"
+                data-skew-x-end="0deg"
+                data-skew-y-start=" 0deg"
+                data-skew-y-end=" 0deg"
+                data-rotate-x-start="0"
+                data-rotate-x-end="0"
+              >
+                <h3 class="pbmit-element-title">In your Mind</h3>
+              </div>
+            </div>
+            <div class="pbmit-svg-btn">
+              <a
+                href="https://api.whatsapp.com/send?phone=+919108101795&text=Hello%21%20"
+                target="_blank"
+                class="pbmit-outline-btn"
+              >
+                <span class="button-content-wrapper">
+                  <span class="pbmit-button-hover"></span>Call Us
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- Tween Effect End -->
+      </div>
+      <!-- Page Content End -->
+
+      <!-- footer -->
+      <footer class="footer site-footer pbmit-bg-color-blackish">
+        <div class="footer-wrap pbmit-footer-big-area">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-8 col-sm-12 pbmit-footer-left-box">
+                <h3>
+                  <span class="pbmit-globalcolor">Let’s</span> Transform your
+                  business for a change that matters!
+                </h3>
+              </div>
+              <div class="col-md-4 col-sm-12 pbmit-footer-right-box">
+                <div class="pbmit-qoute-button">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+919108101795&text=Hello%21%20"
+                    target="_blank"
+                    >Get A Proposal</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pbmit-footer-widget-area">
+          <div class="container">
+            <div class="row">
+              <div
+                class="pbmit-footer-widget pbmit-footer-widget-col-1 col-md-6 col-lg-3"
+              >
+                <div class="widget widget_text">
+                  <h3>
+                    You will find the latest updates and information about us on
+                    this website. Our company is constantly evolving and
+                    growing. Our mission is to provide wide range of quality
+                    services, creative solutions, amazing after support, and
+                    superfast on-time delivery of our offerings that helps every
+                    business grow.
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="pbmit-footer-widget pbmit-footer-widget-col-2 col-md-6 col-lg-3"
+              >
+                <div class="widget">
+                  <h2 class="widget-title">Menu</h2>
+                  <div class="menu-usefull-links-container">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li>
+                        <a
+                          href="top-web-designing-and-development-company-in-belgaum-karnataka-india.html"
+                          >About Us</a
+                        >
+                      </li>
+                      <!-- <li><a href="best-website-designing-and-development-company-in-belgaum-karnataka-india.html">Website Designing & Development Services</a></li> -->
+                      <li>
+                        <a
+                          href="best-web-application-development-company-belgaum-karnataka-india.html"
+                          >Work Portfolio</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="best-ecommerce-website-designing-and-development-company-belgaum-karnataka-india.html"
+                          >Clientele</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://cubiccode.org/" target="_blank"
+                          >Career Acceleration Program</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="contact-details-cubiccode-digital-media-llp.html"
+                          >Contact us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pbmit-footer-widget pbmit-footer-widget-col-3 col-md-6 col-lg-3"
+              >
+                <div class="widget widget_text">
+                  <h2 class="widget-title">Our Services</h2>
+                  <div class="menu-usefull-links-container">
+                    <ul>
+                      <li>
+                        <a
+                          href="best-web-application-development-company-belgaum-karnataka-india.html"
+                          >Websites and Web Application Designing and
+                          Development</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="best-web-application-development-company-belgaum-karnataka-india.html"
+                          >E-commerce and CMS Website Development</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="best-web-application-development-company-belgaum-karnataka-india.html"
+                          >Search Engine Optimization (SEO)</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pbmit-footer-widget pbmit-footer-widget-col-4 col-md-6 col-lg-3"
+              >
+                <div class="widget">
+                  <h2 class="widget-title">Meet Us</h2>
+                  <div class="menu-usefull-links-container">
+                     <div
+                      class="pbmit-contact-widget-line pbmit-contact-widget-address"
+                    >
+                    <b> Registered Address:</b>
+                      Plot.No. 60, Saraf Colony, Opposite to Saraf Residency,
+                      Near Dominos Pizza, RPD Cross, Khanapur Road, Tilakwadi,
+                      Belagavi, Karnataka, India- 590006
+                      <a
+                        href="https://maps.app.goo.gl/7xSdkUUG6Ubc3VPU7"
+                        target="_blank"
+                        >View On Map</a
+                      >
+                      <br>
+                      <b> Bangalore Address:</b>
+                      Novel Office, MG Road, Opposite to 1MG Mall, Bengaluru, Karnataka 560042
+                      <a
+                        href="https://maps.app.goo.gl/LmYJarmyrMm8cwTy9"
+                        target="_blank"
+                        >View On Map</a
+                      >
+                    </div>
+                  </div>
+                  <div class="pbmit-contact-wrapper">
+                    <h2 class="widget-title">Talk to our Experts</h2>
+                    <div class="pbmit-contact-widget-lines">
+                      <div
+                        class="pbmit-contact-widget-line pbmit-contact-widget-phone"
+                      >
+                        <a href="tel:+91 9108101795">+91 9108101795</a>
+                        <a href="tel:+91 8050203399">+91 8050203399</a>
+                      </div>
+                      <div
+                        class="pbmit-contact-widget-line pbmit-contact-widget-email"
+                      >
+                        <a href="mailto:biz@cubiccode.in">biz@cubiccode.in</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pbmit-footer-section pbmit-footer-text-area">
+          <div class="container">
+            <div class="pbmit-footer-text-inner">
+              <div class="row align-items-center">
+                <div class="col-md-3">
+                  <div class="pbmit-footer-social-area">
+                    <ul class="pbmit-social-links">
+                      <li class="pbmit-social-li pbmit-social-linkedin">
+                        <a
+                          href="https://www.linkedin.com/company/cubiccode/mycompany/"
+                          target="_blank"
+                          ><span
+                            ><i class="pbmit-base-icon-linkedin-in"></i></span
+                        ></a>
+                      </li>
+
+                      <li class="pbmit-social-li pbmit-social-instagram">
+                        <a
+                          href="https://www.instagram.com/cubiccode.in/"
+                          target="_blank"
+                          ><span><i class="pbmit-base-icon-instagram"></i></span
+                        ></a>
+                      </li>
+
+                      <li class="pbmit-social-li pbmit-social-facebook">
+                        <a
+                          href="https://www.youtube.com/channel/UCinfpxrfs_N4npK7LtSup3g"
+                          target="_blank"
+                          ><span
+                            ><i class="pbmit-base-icon-youtube-play"></i></span
+                        ></a>
+                      </li>
+                      <li class="pbmit-social-li pbmit-social-twitter">
+                        <a href="https://wa.link/qzlm1j" target="_blank"
+                          ><span><i class="pbmit-base-icon-chat"></i></span
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="pbmit-footer-copyright-text-area">
+                    2016 Cubiccode Digital Media LLP - ISO 9001:2015 Certified
+                    Company. | All Rights Reserved | Designed with ❤️ in INDIA
+                    🇮🇳
+                  </div>
+                </div>
+
+                <div class="row align-items-center text-center mt-1">
+                  <div class="pbmit-footer-copyright-text-area">
+                    <a href="terms-and-conditions.html">
+                      Terms and Conditions
+                    </a>
+                    | <a href="privacy-policy.html">Privacy Policy </a> |
+                    <a href="refund-policy.html"> Refund Policy </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer End -->
+
+      <!-- Scroll To Top -->
+      <div class="pbmit-progress-wrap pbmit-theme-textcolor-white">
+        <svg
+          class="pbmit-progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+      </div>
+      <!-- Scroll To Top End -->
+    </div>
+    <!-- Page Wrapper End -->
+
+    <!-- JS
+         ============================================ -->
+    <!-- jQuery JS -->
+    <script
+      data-cfasync="false"
+      src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jquery Waypoints JS -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- jquery Appear JS -->
+    <script src="js/jquery.appear.js"></script>
+    <!-- Numinate JS -->
+    <script src="js/numinate.min.js"></script>
+    <!-- Slick JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Magnific JS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Circle Progress JS -->
+    <script src="js/circle-progress.js"></script>
+    <!-- countdown JS -->
+    <script src="js/jquery.countdown.min.js"></script>
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <!-- GSAP -->
+    <script src="js/gsap.js"></script>
+    <!-- Scroll Trigger -->
+    <script src="js/ScrollTrigger.js"></script>
+    <!-- Split Text -->
+    <script src="js/SplitText.js"></script>
+    <!-- Cursor -->
+    <script src="js/cursor.js"></script>
+    <!-- Magnetic -->
+    <script src="js/magnetic.js"></script>
+    <!-- GSAP Animation -->
+    <script src="js/gsap-animation.js"></script>
+    <!-- Form Validator -->
+    <script src="js/jquery-validate/jquery.validate.min.js"></script>
+    <!-- Scripts JS -->
+    <script src="js/scripts.js"></script>
+
+    <script>
+      
+    </script>
+
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'89515c316b6c3fc2',t:'MTcxODYwOTY5Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../cdn-cgi/challenge-platform/h/g/scripts/jsd/6aac8896f227/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+    <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+    integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+    data-cf-beacon='{"rayId":"89515c316b6c3fc2","version":"2024.4.1","r":1,"token":"125856bf84ab44059737e93b01aa0fef","b":1}'
+    crossorigin="anonymous"></script> -->
+
+    <script>
+      (function (w, d) {
+        w.CollectId = "5c017eed001a8304e04b7ffc";
+        var h = d.head || d.getElementsByTagName("head")[0];
+        var s = d.createElement("script");
+        s.setAttribute("type", "text/javascript");
+        s.async = true;
+        s.setAttribute("src", "https://collectcdn.com/launcher.js");
+        h.appendChild(s);
+      })(window, document);
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('.webapp-lightbox').magnificPopup({
+          type: 'image',
+          gallery: { enabled: true },
+          image: { verticalFit: false }
+        });
+      });
+    </script>
+
+    <script>
+      // Scroll-triggered animation for web app portfolio items
+      (function() {
+        var items = document.querySelectorAll('#webapp-portfolio .pbmit-portfolio-style-12');
+        if (!items.length) return;
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              setTimeout(function() {
+                entry.target.classList.add('active');
+              }, 100);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+        items.forEach(function(item) { observer.observe(item); });
+      })();
+    </script>
+  <script>
+    (function() {
+      function animateCount(el) {
+        var target = parseFloat(el.getAttribute('data-target'));
+        var suffix = el.getAttribute('data-suffix') || '';
+        var decimals = parseInt(el.getAttribute('data-decimal') || '0');
+        var duration = 1200;
+        var start = 0;
+        var startTime = null;
+        function step(timestamp) {
+          if (!startTime) startTime = timestamp;
+          var progress = Math.min((timestamp - startTime) / duration, 1);
+          var ease = 1 - Math.pow(1 - progress, 3);
+          var current = start + (target - start) * ease;
+          el.textContent = decimals > 0
+            ? current.toFixed(decimals) + suffix
+            : Math.floor(current).toLocaleString() + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+          else el.textContent = decimals > 0 ? target.toFixed(decimals) + suffix : target.toLocaleString() + suffix;
+        }
+        requestAnimationFrame(step);
+      }
+
+      var articles = document.querySelectorAll('#webapp-portfolio article');
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var counters = entry.target.querySelectorAll('.cc-count');
+            counters.forEach(function(el) { animateCount(el); });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      articles.forEach(function(article) { observer.observe(article); });
+    })();
+  </script>
+  </body>
+</html>
+
