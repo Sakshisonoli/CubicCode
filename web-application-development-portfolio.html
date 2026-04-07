@@ -399,6 +399,48 @@
         flex: 1;
         padding: 8px 0 0;
       }
+
+      /* ── Mobile fixes for webapp portfolio ── */
+      @media (max-width: 767.98px) {
+        /* Stack cards full-width on mobile */
+        #webapp-portfolio .pbmit-element-portfolio-style-12 .row > article.col-md-6 {
+          width: 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        /* Single-column stats grid so text doesn't get cut off */
+        .cc-stats-grid {
+          grid-template-columns: 1fr;
+          gap: 5px 0;
+        }
+
+        .cc-stat-item {
+          font-size: 12px;
+        }
+
+        .cc-stats-overlay {
+          padding: 12px 14px;
+        }
+
+        /* Title + badge: wrap instead of overflow */
+        #webapp-portfolio .pbmit-portfolio-style-12 .pbminfotech-titlebox {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.4rem;
+        }
+
+        #webapp-portfolio .pbmit-portfolio-style-12 .pbmit-portfolio-title {
+          font-size: 1rem;
+          line-height: 1.3;
+        }
+
+        /* Section heading font size */
+        #webapp-portfolio .pbmit-heading-subheading .pbmit-title {
+          font-size: 28px !important;
+          line-height: 1.25 !important;
+        }
+      }
     </style>
   </head>
 
