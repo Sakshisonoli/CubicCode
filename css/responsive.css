@@ -2484,3 +2484,18 @@ body {
         -webkit-tap-highlight-color: rgba(26, 86, 219, 0.15) !important;
     }
 }
+
+/* ── Fix logo overlapping hp-mobile-section card ── */
+@media (max-width: 776px) {
+    .site-header {
+        z-index: 100 !important;
+    }
+    .hp-mobile-section {
+        position: relative;
+        z-index: 1;
+    }
+    .hp-mobile-section p {
+        position: relative;
+        z-index: 1;
+    }
+}

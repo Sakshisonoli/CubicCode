@@ -4474,6 +4474,8 @@ input:focus, .form-control:focus {
     .hp-mobile-section {
         display: block;
         margin-bottom: 150px;
+        position: relative;
+        z-index: 1;
     }
 
     .hp-mobile-section p {
