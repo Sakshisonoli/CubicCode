@@ -2499,3 +2499,14 @@ body {
         z-index: 1;
     }
 }
+
+/* ── Hide hp-mobile-section until slider ready, then fade in ── */
+@media (max-width: 768px) {
+    .hp-mobile-section {
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    .hp-mobile-section.cc-ready {
+        opacity: 1;
+    }
+}

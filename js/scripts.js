@@ -390,6 +390,29 @@
   }
   pbmit_back_to_top();
 
+  // Fade in hp-mobile-section after slider initialises (prevents flash on load)
+  (function() {
+    var wrap = document.querySelector('#rev_slider_1_4_wrapper');
+    var mobileSection = document.querySelector('.hp-mobile-section');
+    if (!mobileSection) return;
+    if (!wrap) {
+      mobileSection.classList.add('cc-ready');
+      return;
+    }
+    var observer = new MutationObserver(function() {
+      if (wrap.style.visibility === 'visible' || wrap.style.visibility === '') {
+        mobileSection.classList.add('cc-ready');
+        observer.disconnect();
+      }
+    });
+    observer.observe(wrap, { attributes: true });
+    // Fallback after 2s
+    setTimeout(function() {
+      mobileSection.classList.add('cc-ready');
+      observer.disconnect();
+    }, 2000);
+  })();
+
 
   /* Static Box Slider */
 var pbmit_staticbox_hover_slide = function() {
