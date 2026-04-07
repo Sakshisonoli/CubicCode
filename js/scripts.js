@@ -575,6 +575,17 @@ pbmit_service_bg_hover();
   -------------------------------------*/     
   $('.navbar-toggler,.closepanel').on('click', function () { 
     jQuery("header").toggleClass("active");
+    // Hide/show chat widget when mobile menu opens/closes
+    var isMenuOpen = jQuery("header").hasClass("active");
+    jQuery('iframe, [id*="collect"], [class*="collect-chat"], [id*="chat-widget"]').each(function() {
+      jQuery(this).css('z-index', isMenuOpen ? '0' : '');
+    });
+    // Also target fixed-position divs that are likely chat widgets
+    jQuery('body > div').filter(function() {
+      var el = this;
+      var style = window.getComputedStyle(el);
+      return style.position === 'fixed' && parseInt(style.zIndex) > 100;
+    }).css('z-index', isMenuOpen ? '0' : '');
   }); 
 
   /*-------------------------------------
@@ -621,10 +632,30 @@ pbmit_service_bg_hover();
   Responsive Menu
   -------------------------------------*/ 
   $('.main-menu ul.navigation li.dropdown .righticon').on('click', function() {
-         $(this).siblings().toggleClass('open');
+         $(this).siblings('ul').toggleClass('open');
          $(this).find('i').toggleClass('ti-angle-up ti-angle-up');
          return false;
-  });  
+  });
+
+  /*-------------------------------------
+  Highlight active cc-mega-link on mobile
+  -------------------------------------*/
+  (function() {
+    var currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    $('.cc-mega-link').each(function() {
+      var href = $(this).attr('href') || '';
+      if (href && href.split('/').pop() === currentPath) {
+        $(this).addClass('cc-active');
+      }
+    });
+    // Touch: add blue flash on tap
+    $('.cc-mega-link').on('touchstart', function() {
+      $(this).css({ color: '#1a56db', background: '#eff6ff' });
+    }).on('touchend touchcancel', function() {
+      var self = $(this);
+      setTimeout(function() { self.css({ color: '', background: '' }); }, 300);
+    });
+  })();  
 
   /*-------------------------------------
   Sortable Div

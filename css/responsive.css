@@ -2437,3 +2437,50 @@ body {
         display: none !important;
     }
 }
+
+/* ── Hide chat widget when mobile menu is open ── */
+@media (max-width: 1200px) {
+    /* Push collect.chat widget behind the mobile menu overlay */
+    header.active ~ * iframe[src*="collect"],
+    header.active ~ * [id*="collect"],
+    header.active ~ * [class*="collect"] {
+        z-index: 0 !important;
+    }
+
+    /* Target the collect.chat iframe/widget directly */
+    header.active #collect-chat,
+    header.active ~ #collect-chat {
+        z-index: 0 !important;
+        pointer-events: none !important;
+    }
+
+    /* Broad catch: hide any fixed/absolute chat bubble when menu is open */
+    header.active ~ div[style*="position: fixed"] iframe,
+    header.active ~ div[style*="position:fixed"] iframe {
+        z-index: 0 !important;
+    }
+}
+
+/* ── Mobile nav: cc-mega-dropdown blue active/tap state ── */
+@media (max-width: 1200px) {
+    /* Tap highlight — blue text on touch */
+    .main-menu .navigation li.cc-portfolio-dropdown ul.cc-mega-dropdown li.cc-mega-item a.cc-mega-link:hover,
+    .main-menu .navigation li.cc-portfolio-dropdown ul.cc-mega-dropdown li.cc-mega-item a.cc-mega-link:active,
+    .main-menu .navigation li.cc-portfolio-dropdown ul.cc-mega-dropdown li.cc-mega-item a.cc-mega-link:focus {
+        color: #1a56db !important;
+        background: #eff6ff !important;
+        border-radius: 4px !important;
+        padding-left: 6px !important;
+    }
+
+    /* Highlight the currently active page link */
+    .main-menu .navigation li.cc-portfolio-dropdown ul.cc-mega-dropdown li.cc-mega-item a.cc-mega-link.cc-active {
+        color: #1a56db !important;
+        font-weight: 600 !important;
+    }
+
+    /* Remove the -webkit tap highlight grey flash, replace with blue */
+    .main-menu .navigation li.cc-portfolio-dropdown ul.cc-mega-dropdown li.cc-mega-item a.cc-mega-link {
+        -webkit-tap-highlight-color: rgba(26, 86, 219, 0.15) !important;
+    }
+}
